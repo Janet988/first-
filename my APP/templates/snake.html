@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>贪吃蛇游戏</h1>
+    <div id="score">得分: 0</div> <!-- 新增得分显示 -->
+    <div>
+        <label for="mode">选择难度:</label>
+        <select id="mode">
+            <option value="easy">简单</option>
+            <option value="hard">困难</option>
+        </select>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
